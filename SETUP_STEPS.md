@@ -167,6 +167,3 @@ Then login again — you'll see the Admin Panel in the navbar.
 | Render app is slow first time | Free tier sleeps after 15 min — first request wakes it up |
 
 ---
-
-> 📌 Current step you are on: **Step 1 complete (connection string copied)**
-> ➡️ Next: Run the SQL in Neon SQL Editor, then move to Step 2 (Cloudinary)
