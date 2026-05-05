@@ -80,9 +80,12 @@ function LoginPage({ onLogin, onGoRegister }) {
         {/* Link to Register page */}
         <div className="auth-switch">
           Don't have an account?{" "}
-          <a href="#" onClick={(e) => { e.preventDefault(); onGoRegister(); }}>
+          <span 
+            onClick={onGoRegister} 
+            style={{ color: "#2563eb", fontWeight: "500", cursor: "pointer" }}
+          >
             Register here
-          </a>
+          </span>
         </div>
       </div>
     </div>

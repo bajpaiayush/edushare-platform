@@ -99,9 +99,12 @@ function RegisterPage({ onGoLogin }) {
 
         <div className="auth-switch">
           Already have an account?{" "}
-          <a href="#" onClick={(e) => { e.preventDefault(); onGoLogin(); }}>
+          <span 
+            onClick={onGoLogin} 
+            style={{ color: "#2563eb", fontWeight: "500", cursor: "pointer" }}
+          >
             Login here
-          </a>
+          </span>
         </div>
       </div>
     </div>
