@@ -1,7 +1,6 @@
 # 📚 EduShare — Project Files Overview
 
-If your teacher asks to see the code you have written, these are the **custom files** you should show them. All other files (like `node_modules`, `package-lock.json`, etc.) are automatically generated dependencies.
-
+All other files (like `node_modules`, `package-lock.json`, etc.) are automatically generated dependencies.
 ---
 
 ## 🖥️ Backend Files (Node.js + Express)
@@ -80,10 +79,3 @@ If your teacher asks to see the code you have written, these are the **custom fi
 - **`frontend/src/pages/AdminPage.js`**
   - A secure dashboard only visible to Admins. Features a tabbed interface to view all registered users and delete resources.
 
----
-
-### 💡 Pro-Tip for your Teacher:
-If your teacher asks how you built it, emphasize these points:
-1. *"I used a modular MVC (Model-View-Controller) architecture in the backend to keep the code clean and readable."*
-2. *"I implemented JWT (JSON Web Tokens) for secure, stateless authentication."*
-3. *"I utilized Cloudinary for scalable file storage instead of saving files locally, which allowed me to deploy to serverless platforms like Vercel and Render."*
