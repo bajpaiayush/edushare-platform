@@ -44,7 +44,7 @@ function ResourcesPage({ user }) {
 
   return (
     <div className="container" style={{ marginTop: "30px" }}>
-      <h2 className="page-title">📂 Learning Resources</h2>
+      <h2 className="page-title">Learning Resources</h2>
 
       {/* Search bar */}
       <div className="search-bar">
@@ -88,7 +88,7 @@ function ResourcesPage({ user }) {
             {/* Resource title and subject */}
             <h3>{resource.title}</h3>
             <p>
-              📖 {resource.subject}
+              {resource.subject}
               {resource.description && ` — ${resource.description}`}
             </p>
             <p style={{ marginTop: "4px", fontSize: "12px", color: "#9ca3af" }}>
@@ -104,7 +104,7 @@ function ResourcesPage({ user }) {
             className="btn btn-success btn-sm"
             style={{ textDecoration: "none", whiteSpace: "nowrap" }}
           >
-            ⬇ Download
+            Download
           </a>
         </div>
       ))}

@@ -80,8 +80,8 @@ function RegisterPage({ onGoLogin }) {
 
           {/* Role selection: student or teacher */}
           <div className="form-group">
-            <label>Register as</label>
-            <select value={role} onChange={(e) => setRole(e.target.value)}>
+            <label htmlFor="role-select">Register as</label>
+            <select id="role-select" value={role} onChange={(e) => setRole(e.target.value)}>
               <option value="student">Student</option>
               <option value="teacher">Teacher</option>
             </select>

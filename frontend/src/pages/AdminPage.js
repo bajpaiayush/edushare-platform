@@ -66,7 +66,7 @@ function AdminPage() {
 
   return (
     <div className="container" style={{ marginTop: "30px" }}>
-      <h2 className="page-title">🛡️ Admin Panel</h2>
+      <h2 className="page-title">Admin Panel</h2>
 
       {message && (
         <div className="success-msg">{message}</div>
@@ -78,13 +78,13 @@ function AdminPage() {
           className={`tab-btn ${activeTab === "users" ? "active" : ""}`}
           onClick={() => { setActiveTab("users"); setMessage(""); }}
         >
-          👥 All Users
+          All Users
         </button>
         <button
           className={`tab-btn ${activeTab === "resources" ? "active" : ""}`}
           onClick={() => { setActiveTab("resources"); setMessage(""); }}
         >
-          📁 Manage Resources
+          Manage Resources
         </button>
       </div>
 
@@ -131,13 +131,13 @@ function AdminPage() {
             <div className="resource-card" key={r.id}>
               <div className="resource-info">
                 <h3>{r.title}</h3>
-                <p>📖 {r.subject} — by {r.uploader_name || "Unknown"}</p>
+                <p>{r.subject} — by {r.uploader_name || "Unknown"}</p>
               </div>
               <button
                 className="btn btn-danger btn-sm"
                 onClick={() => handleDelete(r.id)}
               >
-                🗑 Delete
+                Delete
               </button>
             </div>
           ))}

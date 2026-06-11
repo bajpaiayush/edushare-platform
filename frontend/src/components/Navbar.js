@@ -9,7 +9,7 @@ function Navbar({ user, currentPage, onNavigate, onLogout }) {
   return (
     <nav className="navbar">
       {/* App Title */}
-      <h1>📚 EduShare</h1>
+      <h1>EduShare</h1>
 
       {/* Navigation links */}
       <div className="navbar-links">

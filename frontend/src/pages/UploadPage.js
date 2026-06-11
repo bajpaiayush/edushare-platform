@@ -55,7 +55,7 @@ function UploadPage({ user, onSuccess }) {
 
   return (
     <div className="container" style={{ marginTop: "30px", maxWidth: "600px" }}>
-      <h2 className="page-title">📤 Upload Resource</h2>
+      <h2 className="page-title">Upload Resource</h2>
 
       <div className="card">
         {error && <div className="error-msg">{error}</div>}
@@ -95,8 +95,9 @@ function UploadPage({ user, onSuccess }) {
           </div>
 
           <div className="form-group">
-            <label>Select File (PDF, PPT, DOC) *</label>
+            <label htmlFor="file-input">Select File (PDF, PPT, DOC) *</label>
             <input
+              id="file-input"
               type="file"
               accept=".pdf,.ppt,.pptx,.doc,.docx"
               onChange={(e) => setFile(e.target.files[0])}
